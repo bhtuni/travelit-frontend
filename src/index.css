@@ -1,0 +1,57 @@
+/* Reset básico */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Enlaces */
+a {
+  font-weight: 500;
+  color: #00B4D8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0096c7;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Botones */
+button, a.button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #00B4D8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, a.button:hover {
+  background-color: #0096c7;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px auto -webkit-focus-ring-color;
+}
+
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #ffffff;
+    color: #212529;
+  }
+}
